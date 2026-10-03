@@ -557,7 +557,7 @@ a.contato-item:hover { transform: translateX(4px); }
   .formacao { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
   .hero { padding: calc(var(--header-h) + 56px) 0 72px; }
-  .brand-logo { height: calc(var(--header-h) * 0.95); }
+  .brand-logo { height: calc(var(--header-h) * 0.85); }
 
   /* Menu mobile */
   .nav-toggle { display: flex; }
