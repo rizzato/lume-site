@@ -30,11 +30,12 @@ Ela **continua no seu disco** como backup.
 
 ## 2. Enviar o site para o GitHub
 
-Abra o **PowerShell** e rode (troque `SEU-USUARIO` pelo seu usuário do GitHub):
+O repositório local **já está pronto**, com o commit inicial feito e o `remote` já apontando para `https://github.com/rizzato/lume-site.git`.
+
+Depois de criar o repositório no GitHub (passo 1), basta rodar no **PowerShell**:
 
 ```powershell
 cd C:\Users\Rafael\julia\lume-site
-git remote add origin https://github.com/SEU-USUARIO/lume-site.git
 git push -u origin main
 ```
 
@@ -54,7 +55,7 @@ git push -u origin main
 ✅ O site já estará no ar em:
 
 ```
-https://SEU-USUARIO.github.io/lume-site/
+https://rizzato.github.io/lume-site/
 ```
 
 ---
@@ -83,7 +84,7 @@ No painel onde o DNS do `lume.med` é gerenciado, crie/ajuste:
 
 | Tipo | Nome | Valor |
 |------|------|-------|
-| CNAME | `www` | `SEU-USUARIO.github.io` |
+| CNAME | `www` | `rizzato.github.io` |
 
 > 🔴 **NÃO MEXA nos registros `MX`.** São eles que fazem o e-mail `clinica@lume.med` do Google Workspace funcionar. Altere **apenas** registros `A` e `CNAME`.
 >
