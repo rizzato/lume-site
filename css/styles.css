@@ -151,7 +151,7 @@ button { font-family: inherit; cursor: pointer; }
   align-items: center;
   color: var(--c-ink);
 }
-.brand-logo { height: 80px; width: auto; }
+.brand-logo { height: 50px; width: auto; }
 .site-nav { display: flex; align-items: center; }
 .nav-list { display: flex; align-items: center; gap: 30px; }
 .nav-list a:not(.btn) {
@@ -455,7 +455,7 @@ a.contato-item:hover { transform: translateX(4px); }
   gap: 48px;
   padding-bottom: 48px;
 }
-.footer-brand .brand-logo { height: 40px; margin-bottom: 18px; color: var(--c-cream-light); }
+.footer-brand .brand-logo { height: 25px; margin-bottom: 18px; color: var(--c-cream-light); }
 .footer-brand p { color: rgba(239, 228, 216, 0.75); font-size: 0.92rem; }
 .footer-col h4 {
   color: var(--c-cream-light);
@@ -557,7 +557,7 @@ a.contato-item:hover { transform: translateX(4px); }
   .formacao { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
   .hero { padding: calc(var(--header-h) + 56px) 0 72px; }
-  .brand-logo { height: 26px; }
+  .brand-logo { height: calc(var(--header-h) * 0.95); }
 
   /* Menu mobile */
   .nav-toggle { display: flex; }
