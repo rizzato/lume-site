@@ -1,0 +1,12 @@
+# ------------------------------------------------------------------
+# Material de ORIGEM — não vai para o repositório / site.
+# Contém as fotos originais em alta resolução e as descrições.
+# O site usa apenas assets/img/*.webp (otimizadas).
+# Os arquivos continuam no disco local como backup.
+# ------------------------------------------------------------------
+assets/fotos/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página não encontrada · LUMË</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --c-ink: #58534B;
+      --c-ink-deep: #413d37;
+      --c-primary: #A39D96;
+      --c-secondary: #B8B298;
+      --c-cream: #E0CFBF;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 40px 24px;
+      text-align: center;
+      color: var(--c-ink);
+      font-family: "Poppins", system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(900px 500px at 80% -10%, rgba(184, 178, 152, 0.5), transparent 60%),
+        radial-gradient(700px 400px at 0% 100%, rgba(163, 157, 150, 0.25), transparent 60%),
+        var(--c-cream);
+    }
+    .box { max-width: 520px; }
+    .mark { width: 96px; height: auto; margin: 0 auto 28px; color: var(--c-primary); display: block; }
+    h1 {
+      font-family: "Afacad Flux", "Poppins", sans-serif;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 600;
+      color: var(--c-ink-deep);
+      margin: 0 0 12px;
+      letter-spacing: -0.01em;
+    }
+    p { margin: 0 0 28px; }
+    .btn {
+      display: inline-block;
+      background: var(--c-ink);
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.18s ease;
+    }
+    .btn:hover { background: var(--c-ink-deep); }
+    .crm { margin-top: 40px; font-size: 0.78rem; color: #8a847c; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <svg class="mark" viewBox="0 0 631.88 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="currentColor">
+        <path d="M521.73,414.64c0,17.58-14.26,31.84-31.84,31.84h-172.67c-18.83.51-34.72,8.01-47.69,22.51-12.97,14.5-19.46,29.13-19.46,43.88,0,20.87,6.61,37.27,19.84,49.22,13.22,11.96,28.48,17.93,45.78,17.93h174.2c17.58,0,31.84,14.26,31.84,31.84v74.44c0,17.58-14.26,31.84-31.84,31.84h-173.43c-17.3,1.03-32.56,8.14-45.79,21.37-13.23,13.23-20.1,28.5-20.6,45.78,0,19.84,6.99,35.87,20.99,48.08,13.99,12.21,29.38,18.58,46.17,19.08h172.67c17.58,0,31.84,14.26,31.84,31.84v75.21c0,17.58-14.26,31.84-31.84,31.84h-173.43c-57.49.5-106.45-19.46-146.9-59.9-40.44-40.45-60.4-88.9-59.9-145.37,2.03-35.6,7.63-63.34,16.79-83.18,9.16-19.84,20.85-37.64,35.1-53.42-7.63-6.1-17.81-21.1-30.52-45.02-12.72-23.91-19.84-54.94-21.37-93.1,0-56.47,20.22-104.92,60.67-145.37,40.44-40.44,88.64-60.4,144.61-59.9h174.96c17.58,0,31.84,14.26,31.84,31.84v76.73Z"/>
+        <circle cx="250.44" cy="162.45" r="73.79"/>
+        <circle cx="448.44" cy="162.45" r="73.79"/>
+      </g>
+    </svg>
+    <h1>Página não encontrada</h1>
+    <p>O endereço que você procura não existe ou foi movido.</p>
+    <a class="btn" id="voltar" href="/">Voltar ao início</a>
+    <p class="crm">LUMË · Dra. Julia Lassance — CRM 142225 · RQE 62172</p>
+  </div>
+
+  <script>
+    // Ajusta o link do botão para funcionar tanto no domínio próprio (raiz)
+    // quanto na URL de projeto do GitHub Pages (usuario.github.io/lume-site/).
+    (function () {
+      var el = document.getElementById('voltar');
+      if (!el) return;
+      var m = location.pathname.match(/^(\/[^\/]+\/)/);
+      var projectPage = /\.github\.io$/.test(location.hostname) && m;
+      el.setAttribute('href', projectPage ? m[1] : '/');
+    })();
+  </script>
+</body>
+</html>

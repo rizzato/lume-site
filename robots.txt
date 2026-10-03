@@ -1,0 +1,16 @@
+# LUMË — VERSÃO BETA
+#
+# Indexação BLOQUEADA de propósito: o site ainda é um beta e não deve
+# aparecer no Google.
+#
+# ------------------------------------------------------------------
+# QUANDO O SITE FOR OFICIAL, substitua o bloco abaixo por:
+#
+#   User-agent: *
+#   Allow: /
+#
+#   Sitemap: https://lume.med/sitemap.xml
+# ------------------------------------------------------------------
+
+User-agent: *
+Disallow: /
