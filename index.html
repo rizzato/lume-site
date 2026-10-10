@@ -6,13 +6,57 @@
   <title>LUMË · Clínica Geriátrica da Dra. Julia Lassance</title>
   <meta name="description" content="LUMË — clínica de geriatria e clínica geral da Dra. Julia Lassance. Medicina sensível, contemporânea e centrada na pessoa, para viver mais e melhor." />
   <meta name="theme-color" content="#A39D96" />
+  <link rel="canonical" href="https://lume.med/" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="LUMË · Clínica Geriátrica" />
-  <meta property="og:description" content="Geriatria & Clínica Geral · Dra. Julia Lassance. Envelhecer com autonomia, segurança e propósito." />
+  <!-- Open Graph / preview ao compartilhar (WhatsApp, Instagram, etc.) -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="LUMË" />
+  <meta property="og:url" content="https://lume.med/" />
+  <meta property="og:title" content="LUMË · Clínica de Geriatria — Dra. Julia Lassance" />
+  <meta property="og:description" content="Geriatria &amp; Clínica Geral em São Paulo. Envelhecer com autonomia, segurança e propósito." />
+  <!-- og:image usa o domínio de produção (lume.med). Enquanto o HTTPS do domínio não estiver ativo, o preview pode não exibir a imagem. -->
+  <meta property="og:image" content="https://lume.med/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Logotipo LUMË — Clínica de Geriatria" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LUMË · Clínica de Geriatria — Dra. Julia Lassance" />
+  <meta name="twitter:description" content="Geriatria &amp; Clínica Geral em São Paulo. Envelhecer com autonomia, segurança e propósito." />
+  <meta name="twitter:image" content="https://lume.med/assets/og-image.jpg" />
+
+  <!-- Dados estruturados para busca local -->
+  <!-- ATENÇÃO: atualizar o campo "telephone" com o número real da clínica antes de publicar -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "LUMË — Clínica de Geriatria",
+    "url": "https://lume.med/",
+    "image": "https://lume.med/assets/og-image.jpg",
+    "logo": "https://lume.med/assets/favicon.svg",
+    "description": "Clínica de geriatria e clínica geral da Dra. Julia Lassance, no Brooklin, São Paulo.",
+    "medicalSpecialty": "Geriatric",
+    "telephone": "+55 11 91234-5678",
+    "email": "clinica@lume.med",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Portugal, 1629, cj. 12 — Brooklin",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "employee": {
+      "@type": "Physician",
+      "name": "Dra. Julia Lassance",
+      "medicalSpecialty": "Geriatric",
+      "identifier": "CRM-SP 142225"
+    },
+    "sameAs": ["https://www.instagram.com/julialassance/"]
+  }
+  </script>
 
   <!-- Fontes da marca -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -215,8 +259,6 @@
             <p>Acompanhamento contínuo de condições como hipertensão e diabetes, integrado às necessidades de cada pessoa.</p>
           </article>
         </div>
-
-        <p class="nota reveal">Descrições dos serviços sujeitas a ajuste com a Dra. Julia antes da publicação.</p>
       </div>
     </section>
 
@@ -317,13 +359,18 @@
             </div>
           </div>
 
-          <div class="mapa reveal">
-            <iframe
-              title="Mapa da LUMË — Av. Portugal, 1629, Brooklin, São Paulo"
-              src="https://www.google.com/maps?q=Av.+Portugal,+1629,+Brooklin,+S%C3%A3o+Paulo&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen></iframe>
+          <div class="mapa-col reveal">
+            <div class="mapa">
+              <iframe
+                title="Mapa da LUMË — Av. Portugal, 1629, Brooklin, São Paulo"
+                src="https://www.google.com/maps?q=Av.+Portugal,+1629,+Brooklin,+S%C3%A3o+Paulo&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+            <p class="mapa-link">
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Portugal,+1629,+cj.+12,+Brooklin,+S%C3%A3o+Paulo" target="_blank" rel="noopener">Abrir no Google Maps →</a>
+            </p>
           </div>
         </div>
 
